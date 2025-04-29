@@ -5,10 +5,10 @@ import { ShoppingCart } from "lucide-react";
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
-import { useAddToCart } from "../../../../context/Context"; // adjust your path if needed
+import { useAddToCart } from "../../../../context/Context"; 
 
 export default function ProductPage() {
-  const { items, setItems } = useAddToCart(); // 👈 hook for cart context
+  const { items, setItems } = useAddToCart(); 
   const [products, setProducts] = useState([]);
   const [status, setStatus] = useState("");
 
